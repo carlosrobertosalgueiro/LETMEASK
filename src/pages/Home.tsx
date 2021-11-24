@@ -17,13 +17,14 @@ export function Home() {
             </aside>
 
             <main>
+                <div className="main-content">
                 <img src={logoImg} alt="Letmeask" />
 
-                <button>
+                <button className="create-room">
                     <img src={googleIconImg} alt="Icone google" />
                     Crie sua sala com o google
                 </button>
-                <div>ou entre na sala</div>
+                <div className="separator" >ou entre na sala</div>
                 <form >
 
                     <input type="text"
@@ -35,6 +36,8 @@ export function Home() {
                     <button type="submit"> Entar na sala</button>
 
                 </form>
+
+                </div>
 
 
             </main>
