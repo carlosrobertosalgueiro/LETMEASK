@@ -1,6 +1,7 @@
 import illustrationImg from '../assets/images/illustration.svg'
 import logoImg from '../assets/images/logo.svg'
 import googleIconImg from '../assets/images/google-icon.svg'
+import {Button } from '../components/Button'
 
 
 import '../styles/auth.scss'
@@ -18,24 +19,27 @@ export function Home() {
 
             <main>
                 <div className="main-content">
-                <img src={logoImg} alt="Letmeask" />
+                    <img src={logoImg} alt="Letmeask" />
 
-                <button className="create-room">
-                    <img src={googleIconImg} alt="Icone google" />
-                    Crie sua sala com o google
-                </button>
-                <div className="separator" >ou entre na sala</div>
-                <form >
+                    <button className="create-room">
+                        <img src={googleIconImg}
+                            alt="Icone google" />
+                        Crie sua sala com o google
+                    </button>
+                    <div className="separator" >ou entre na sala</div>
+                    <form >
 
-                    <input type="text"
-                        name=""
-                        id=""
-                        placeholder="Digite o nome da sala"
-                    />
+                        <input type="text"
+                            name=""
+                            id=""
+                            placeholder="Digite o nome da sala"
+                        />
 
-                    <button type="submit"> Entar na sala</button>
+                        <Button type="submit">
+                            Entar na sala
+                        </Button>
 
-                </form>
+                    </form>
 
                 </div>
 

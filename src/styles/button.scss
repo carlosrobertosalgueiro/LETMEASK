@@ -5,8 +5,9 @@
     height: 50px;
     border-radius: 8px;
     font-weight: 500;
-    background: #ea4335;
+    background: #835afd;
     color: #FFF;
+    padding: 0 32px;
 
     display: flex;
     align-items:center;
@@ -22,10 +23,14 @@
 
     transition: filter 0.2s;
 
-    &:hover{
+    &:not(:disabled):hover{
 
         filter: brightness(0.9);
     }
 
+    &:disabled{
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
     
 }
